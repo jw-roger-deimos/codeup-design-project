@@ -5,7 +5,7 @@ body {
   padding:0;
   background-color: #F0F0F0;
 }
-map{
+main{
   display: grid;
   grid-template-columns: 5% 1fr 5%;
   grid-template-rows: repeat(5, 1fr);
@@ -32,10 +32,26 @@ h1 h2 h3 h4 h5 {
 }
 .box2{
     grid-area: box2;
+    display: grid;
+    justify-items: center;
+    /*justify-content: space-around;*/
+
 }
-.box3{
-    grid-area: box3;
+.box3 {
+  grid-area: box3;
+  display: grid;
+
+
+
+
 }
+.box3 img{
+  padding: 5px;
+  height: 105px;
+  width:105px;
+
+}
+
 .box4{
     grid-area: box4;
 }
