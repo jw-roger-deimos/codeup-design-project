@@ -38,26 +38,59 @@ h1 h2 h3 h4 h5 {
 
 }
 .box3 {
-  grid-area: box3;
-  display: grid;
-
-
-
-
+    grid-area: box3;
+    display: grid;
+    grid-template-areas:
+    "icon1 icon3"
+    "icon2 icon4";
 }
+
 .box3 img{
   padding: 5px;
   height: 105px;
   width:105px;
-
+}
+.icon1{
+    grid-area: icon1;
+    margin-left: auto;
+    padding: 5px;
+}
+.icon2{
+    grid-area: icon2;
+    margin-left: auto;
+    padding: 5px;
+}
+.icon3{
+    grid-area: icon3;
+    margin-right: auto;
+    padding: 5px;
+}
+.icon4{
+    grid-area: icon4;
+    margin-right: auto;
+    padding: 5px;
 }
 
 .box4{
     grid-area: box4;
+    padding-top: 50px;
+}
+.box4 h5{
+    text-align: center;
+}
+.box4 img{
+    width: 90vw;
 }
 .box5{
     grid-area: box5;
+    display: flex;
+    justify-content: flex-end;
 }
-.box6{
-    grid-area: box6;
+.box5 h5{
+    margin-right: auto;
+}
+.box5 img {
+    height: 18px;
+    width: 18px;
+    padding: 2px;
 }
