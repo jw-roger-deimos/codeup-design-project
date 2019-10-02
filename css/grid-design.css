@@ -1,4 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+p{
+  font-family: 'Abel', sans-serif;
+}
+h1 h2 h3 h4 h5 {
+  font-family: 'Anton', sans-serif;
+}
 
+
+/*iPHONE X*/
 
 body {
   margin: 0;
@@ -20,13 +31,6 @@ main{
       ". box5 .";
 }
 
-p{
-  font-family: 'Abel', sans-serif;
-}
-h1 h2 h3 h4 h5 {
-  font-family: 'Anton', sans-serif;
-}
-
 .box1{
     grid-area: box1;
 }
@@ -43,6 +47,7 @@ h1 h2 h3 h4 h5 {
     grid-template-areas:
     "icon1 icon3"
     "icon2 icon4";
+
 }
 
 .box3 img{
@@ -94,3 +99,61 @@ h1 h2 h3 h4 h5 {
     width: 18px;
     padding: 2px;
 }
+
+/*SMALL SCREEN iphone x landscape*/
+@media (min-width: 576px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+            ". box1 box1 ."
+            ". box2 box2 ."
+            ". box3 box3 ."
+            ". boxhr boxhr ."
+            ". box4 box4 ."
+            ". box5 box5 ."
+            ". box6 box6 . "
+            ". box5 box5 .";
+  }
+.box3{
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+.boxhr{
+  grid-area: boxhr;
+}
+
+.icon1 {
+  padding: 0;
+  margin: 0;
+}
+  .icon2 {
+    padding: 0;
+    margin: 0;
+  }
+  .icon3 {
+    padding: 0;
+    margin: 0;
+  }
+  .icon4 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/*medium SCREEN ipad*/
+@media (min-width: 768px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: ". box1 box1 ." ". box2 box2 ." ". box3 box3 ." ". box4 box4 ." ". box5 box5 ." ". box6 box6 . " ". box5 box5 .";
+
+
+  }
+  }
+
