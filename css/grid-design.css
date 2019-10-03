@@ -7,7 +7,41 @@ p{
 h1 h2 h3 h4 h5 {
   font-family: 'Anton', sans-serif;
 }
+/*@-webkit-keyframes design {*/
+/*    0% {*/
+/*        content: url("../img/assets/design.png");*/
+/*        height: 105px;*/
+/*        width: 105px;*/
+/*        border: 5px solid white;*/
+/*        border-radius: 50%;*/
+/*        -webkit-box-shadow: 0 0 9px whitesmoke;*/
 
+
+/*    }*/
+/*    50% {*/
+/*        content: url("../img/assets/design-grey-mid.png");*/
+/*        height: 105px;*/
+/*        width: 105px;*/
+/*        border: 5px solid white;*/
+/*        border-radius: 50%;*/
+/*        -webkit-box-shadow: 0 0 18px #E65538;*/
+
+/*    }*/
+/*    100% {*/
+/*        content: url("../img/assets/design-grey-end.png");*/
+/*        height: 105px;*/
+/*        width: 105px;*/
+/*        border: 5px solid #E65538;*/
+/*        border-radius: 50%;*/
+/*        -webkit-box-shadow: 0 0 9px #E65538;*/
+
+/*    }*/
+/*}*/
+/*.icon1:hover {*/
+/*    -webkit-animation-name: design;*/
+/*    -webkit-animation-duration: 1.5s;*/
+/*    -webkit-animation-iteration-count: infinite;*/
+}
 
 /*iPHONE X*/
 
@@ -19,21 +53,49 @@ body {
 main{
   display: grid;
   grid-template-columns: 5% 1fr 5%;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-gap:0;
   height: 100vh;
   width: 100vw;
   grid-template-areas:
       ". box1 ."
+      ". box1-1 ."
+      ". box1-2 ."
       ". box2 ."
       ". box3 ."
+      ". boxhr ."
       ". box4 ."
       ". box5 .";
 }
-
+/*nav-bar start*/
 .box1{
     grid-area: box1;
+    display: flex;
+    justify-content: center;
 }
+.box1 img{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+}
+.box1-1{
+    grid-area: box1-1;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.box1-2{
+    grid-area: box1-2;
+    display: flex;
+    justify-content: center;
+}
+.box1-2 a{
+    font-family: 'Abel', sans-serif;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+/*nav-bar end */
 .box2{
     grid-area: box2;
     display: grid;
@@ -47,18 +109,19 @@ main{
     grid-template-areas:
     "icon1 icon3"
     "icon2 icon4";
-
 }
 
 .box3 img{
-  padding: 5px;
-  height: 105px;
-  width:105px;
+    height: 105px;
+    width:105px;
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
 }
 .icon1{
     grid-area: icon1;
     margin-left: auto;
     padding: 5px;
+
 }
 .icon2{
     grid-area: icon2;
@@ -75,15 +138,19 @@ main{
     margin-right: auto;
     padding: 5px;
 }
-
+.boxhr{
+    grid-area: boxhr;
+    margin-top: 50px;
+    text-align: center;
+}
 .box4{
     grid-area: box4;
     padding-top: 50px;
+
 }
-.box4 h5{
-    text-align: center;
-}
+
 .box4 img{
+    border: 5px solid lightgray;
     width: 90vw;
 }
 .box5{
@@ -106,42 +173,131 @@ main{
   main {
     display: grid;
     grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
-            ". box1 box1 ."
+            ". box1-2 box1 ."
+            ". box1-1 box1-1 ."
             ". box2 box2 ."
             ". box3 box3 ."
             ". boxhr boxhr ."
             ". box4 box4 ."
-            ". box5 box5 ."
-            ". box6 box6 . "
-            ". box5 box5 .";
+            ". box5 box5-1 ."
+            ". box6 box6 ."
+            ". box5-2 box5-3 .";
   }
+
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .box3{
   display: flex;
   margin: 0;
   justify-content: center;
 }
+    .icon1 {
+        padding: 0;
+        margin: 0;
+    }
+    .icon2 {
+        padding: 0;
+        margin: 0;
+    }
+    .icon3 {
+        padding: 0;
+        margin: 0;
+    }
+    .icon4 {
+        padding: 0;
+        margin: 0;
+    }
+
 .boxhr{
   grid-area: boxhr;
+    border-top: 1px solid grey;
+    padding-top: 50px;
 }
 
-.icon1 {
-  padding: 0;
-  margin: 0;
+.box4 {
+    display: flex;
 }
-  .icon2 {
-    padding: 0;
-    margin: 0;
-  }
-  .icon3 {
-    padding: 0;
-    margin: 0;
-  }
-  .icon4 {
-    padding: 0;
-    margin: 0;
-  }
+.box4 img {
+    width: 40vw;
+
+}
+.box4 .ipad{
+    margin-right: 50px;
+}
+.box5{
+    grid-area: box5;
+    display: flex;
+    justify-content: flex-start;
+}
+.box5 h5{
+    margin-right: 0;
+    padding-right: 10px;
+}
+.box5 img {
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+}
+.box5-1{
+    grid-area: box5-1;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.box5-1 h5{
+    margin-right: 0;
+    padding-right: 10px;
+}
+.box5-1 img {
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+}
+    .box5-2{
+        grid-area: box5-2;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .box5-2 h5{
+        padding-right: 10px;
+    }
+    .box5-2 img {
+        height: 18px;
+        width: 18px;
+        padding: 2px;
+    }
+    .box5-3{
+        grid-area: box5-3;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .box5-3 h5{
+        padding-right: 10px;
+    }
+    .box5-3 img {
+        height: 18px;
+        width: 18px;
+        padding: 2px;
+    }
+.box6 {
+    grid-area: box6;
+    display: flex;
+}
+.box6 img {
+    width: 40vw;
+    border: 5px solid lightgray
+}
+.box6 .man{
+    margin-right: 50px;
+}
+
 }
 
 /*medium SCREEN ipad*/
