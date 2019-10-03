@@ -6,7 +6,7 @@ p {
     font-family: 'Abel', sans-serif;
 }
 
-h1 h2 h3 h4 h5 {
+h1 h2 h3 h4 h5 a {
     font-family: 'Anton', sans-serif;
 }
 
@@ -432,11 +432,177 @@ main {
 
     main {
         display: grid;
-        grid-template-columns: 5% 1fr 1fr 5%;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: ". box1 box1 ." ". box2 box2 ." ". box3 box3 ." ". box4 box4 ." ". box5 box5 ." ". box6 box6 . " ". box5 box5 .";
+    !important;
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            ". box1 box1-1 box1-2 ."
+            ". box2 box2 box2 ."
+            ". box3 box3 box3 ."
+            ". boxhr boxhr boxhr ."
+            ". box4 box4 box7-1 ."
+            ". box5 box5-1 box7-2 ."
+            ". box6 box6  box7-3 . "
+            ". box5-2 box5-3 box8 .";
+    }
 
+    .box1 {
+        grid-area: box1;
+    }
+    .box1-1 {
 
     }
+
+    .box1-2 {
+        grid-area: box1-2;
+    }
+
+    .box2 {
+        grid-area: box2;
+    }
+    .box3 {
+        grid-area: box3;
+    }
+
+    .box4 {
+        grid-area: box4;
+    }
+    .box4 img {
+        width: 25vw
+    }
+
+    .box5 {
+        grid-area: box5;
+    }
+
+    .box5-1 {
+        grid-area: box5-1;
+    }
+
+    .box5-2 {
+        grid-area: box5-2;
+    }
+
+    .box5-3 {
+        grid-area: box5-3;
+    }
+    .box6 {
+        grid-area: box6;
+    }
+
+    .box6 img {
+        width: 25vw;
+    }
+    .box6 .man {
+        height: 25vh;
+    }
+
+    .sideimg img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .box7-1 {
+        grid-area: box7-1;
+    }
+
+    .box7-2 {
+        grid-area: box7-2;
+    }
+
+    .box7-3 {
+        grid-area: box7-3;
+    }
+
+    .box8 {
+        grid-area: box8;
+    }
+}
+
+
+
+
+
+
+}
+/*!*Large screen *!*/
+/*@media (min-width: 992px) {*/
+/*main {*/
+/*    display: grid;*/
+/*!important;*/
+/*    grid-template-columns: 15% 1fr 1fr 1fr 15%;*/
+/*    grid-template-rows: repeat(8, 1fr);*/
+/*    grid-template-areas:*/
+/*            ". box1 box1-1 box1-2 ."*/
+/*            ". box2 box2 box2 ."*/
+/*            ". box3 box3 box3 ."*/
+/*            ". boxhr boxhr boxhr ."*/
+/*            ". box4 box4 box7-1 ."*/
+/*            ". box5 box5-1 box7-2 ."*/
+/*            ". box6 box6  box7-3 . "*/
+/*            ". box5-2 box5-3 box8 .";*/
+/*}*/
+
+/*.box1 {*/
+/*    grid-area: box1;*/
+/*}*/
+/*.box1-1 {*/
+
+/*}*/
+
+/*.box1-2 {*/
+/*    grid-area: box1-2;*/
+/*}*/
+
+/*.box2 {*/
+/*    grid-area: box2;*/
+/*}*/
+/*.box3 {*/
+/*    grid-area: box3;*/
+/*}*/
+
+/*.box4 {*/
+/*    grid-area: box4;*/
+/*}*/
+
+/*.box5 {*/
+/*    grid-area: box5;*/
+/*}*/
+
+/*.box5-1 {*/
+/*    grid-area: box5-1;*/
+/*}*/
+
+/*.box5-2 {*/
+/*    grid-area: box5-2;*/
+/*}*/
+
+/*.box5-3 {*/
+/*    grid-area: box5-3;*/
+/*}*/
+
+/*.box7 {*/
+/*    grid-area: box7;*/
+/*}*/
+
+/*.box7-1 {*/
+/*    grid-area: box7-1;*/
+/*}*/
+
+/*.box7-2 {*/
+/*    grid-area: box7-2;*/
+/*}*/
+
+/*.box7-3 {*/
+/*    grid-area: box7-3;*/
+/*}*/
+
+/*.box8 {*/
+/*    grid-area: box8;*/
+/*}*/
+/*}*/
+
+
+
 
 
