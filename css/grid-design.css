@@ -196,9 +196,9 @@ main {
 
     main {
         display: grid !important;
-        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-columns: 5% 1fr 3% 1fr 5%;
         grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: ". nav2-2 nav2 nav2-3 ." ". nav2-1 nav2-1 nav2-1 ." ". box2 box2 box2 ." ". box3 box3 box3 ." ". boxhr boxhr boxhr ." ". box4 box4 box4 ." ". box5 box5 box5-1 ." ". box6 box6 box6 ." ". box5-2 box5-2 box5-3 .";
+        grid-template-areas: ". nav2-2 nav2 nav2-3 ." ". nav2-1 nav2-1 nav2-1 ." ". box2 box2 box2 ." ". box3 box3 box3 ." ". boxhr boxhr boxhr ." ". box4 box4 box4 ." ". box5 . box5-1 ." ". box6 box6 box6 ." ". box5-2 . box5-3 .";
 
     }
 
@@ -318,7 +318,7 @@ main {
 
     .box5 {
         display: grid;
-        grid-template-columns: 2fr 60% repeat(6, 1fr);
+        grid-template-columns: 1fr 60% repeat(6, 1fr);
         grid-template-areas: ". a1 . a2 a3 a4 a5 .";
     }
 
