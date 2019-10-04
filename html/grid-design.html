@@ -15,7 +15,7 @@
 <main>
     <!-- start of nav   -->
     <div id="nav1" class="nav1 d-block d-sm-none">
-        <a onmouseleave="changeClass()"><img class="logo1" src="../img/assets/logo.png"></a>
+        <a onmouseleave="changeId()"><img id="logo1" src="../img/assets/logo.png"></a>
     </div>
     <div class="nav1-1 d-block d-sm-none">
         <p>codeup design</p>
@@ -170,11 +170,11 @@
         crossorigin="anonymous"></script>
 <!--custom javascript-->
 <script>
-    function changeClass() {
-        if (document.getElementsByClassName("logo1")) {
-            document.getElementsByClassName('logo1').id = 'logo2';
+    function changeId() {
+        if (document.getElementById("logo1")) {
+            document.getElementById('logo1').id = 'logo2';
         } else
-            document.getElementsByClassName("logo2").id = "logo2";
+            document.getElementById("logo2").id = "logo1";
 
     }
 </script>
