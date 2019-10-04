@@ -10,43 +10,9 @@ h1 h2 h3 h4 h5 h6 a {
     font-family: 'Anton', sans-serif;
 }
 
-/*@-webkit-keyframes design {*/
-/*    0% {*/
-/*        content: url("../img/assets/design.png");*/
-/*        height: 105px;*/
-/*        width: 105px;*/
-/*        border: 5px solid white;*/
-/*        border-radius: 50%;*/
-/*        -webkit-box-shadow: 0 0 9px whitesmoke;*/
 
 
-/*    }*/
-/*    50% {*/
-/*        content: url("../img/assets/design-grey-mid.png");*/
-/*        height: 105px;*/
-/*        width: 105px;*/
-/*        border: 5px solid white;*/
-/*        border-radius: 50%;*/
-/*        -webkit-box-shadow: 0 0 18px #E65538;*/
-
-/*    }*/
-/*    100% {*/
-/*        content: url("../img/assets/design-grey-end.png");*/
-/*        height: 105px;*/
-/*        width: 105px;*/
-/*        border: 5px solid #E65538;*/
-/*        border-radius: 50%;*/
-/*        -webkit-box-shadow: 0 0 9px #E65538;*/
-
-/*    }*/
-/*}*/
-/*.icon1:hover {*/
-/*    -webkit-animation-name: design;*/
-/*    -webkit-animation-duration: 1.5s;*/
-/*    -webkit-animation-iteration-count: infinite;*/
-
-
-/*iPHONE X*/
+/*576 width*/
 
 body {
     margin: 0;
@@ -61,67 +27,59 @@ main {
     grid-gap: 0;
     height: 100vh;
     width: 100vw;
-    grid-template-areas:
-            ". nav1 ."
-            ". nav1-1 ."
-            ". nav1-2 ."
-            ". box2 ."
-            ". box3 ."
-            ". boxhr ."
-            ". box4 ."
-            ". box5 .";
+    grid-template-areas: ". nav1 ." ". nav1-1 ." ". nav1-2 ." ". box2 ." ". box3 ." ". boxhr ." ". box4 ." ". box5 .";
 }
+@media (max-width:575px) {
+    /*nav-bar start*/
+    .nav1 {
+        grid-area: nav1;
+        display: flex !important;
+        justify-content: center;
+        background-color: white;
+        height: 50px;
+        margin-top: 50px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 
-/*nav-bar start*/
+    .nav1 img {
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        z-index: 1;
+        margin-top: -25px;
+        border: 1px solid #49ACAB;
+        justify-content: center;
 
-.nav1 {
-    grid-area: nav1;
-    display: flex !important;
-    justify-content: center;
-    background-color: white;
-    height: 50px;
-    margin-top: 50px;
-    margin-left: -20px;
-    margin-right: -20px;
+
+    }
+
+    .nav1-1 {
+        grid-area: nav1-1;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav1-2 {
+        grid-area: nav1-2;
+        display: flex;
+        margin: auto;
+
+    }
+
+    .nav1-2 a {
+        font-family: 'Abel', sans-serif;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+    }
+
+    /*nav-bar end */
 }
-
-.nav1 img {
-    width: 105px;
-    height: 105px;
-    border-radius: 50%;
-    z-index: 1;
-    margin-top: -25px;
-    border: 1px solid #49ACAB;
-    justify-content: center;
-    /*margin-left: 35%;*/
-
-}
-
-.nav1-1 {
-    grid-area: nav1-1;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav1-2 {
-    grid-area: nav1-2;
-    display: flex;
-    margin: auto;
-
-}
-
-.nav1-2 a {
-    font-family: 'Abel', sans-serif;
-    padding: 5px;
-    color: black;
-    text-decoration: none;
-}
-
-/*nav-bar end */
 .box2 {
     grid-area: box2;
     display: grid;
@@ -174,6 +132,7 @@ main {
     margin-top: 50px;
 
 }
+
 .work {
     grid-area: work;
     display: flex;
@@ -218,6 +177,7 @@ main {
 .a5 {
     grid-area: a5;
 }
+
 .box5 img {
     height: 18px;
     width: 18px;
@@ -225,35 +185,31 @@ main {
 }
 
 
-/*SMALL SCREEN iphone x landscape*/
+/*SMALL SCREEN 576px width*/
 @media (min-width: 576px) {
 
     main {
-        display: grid;
+        display: grid !important;
         grid-template-columns: 5% 1fr 1fr 1fr 5%;
         grid-template-rows: repeat(8, 1fr);
-        grid-template-areas:
-                ". nav2-2 nav2 nav2-3 ."
-                ". nav2-1 nav2-1 nav2-1 ."
-                ". box2 box2 box2 ."
-                ". box3 box3 box3 ."
-                ". boxhr boxhr boxhr ."
-                ". box4 box4 box4 ."
-                ". box5 box5 box5-1 ."
-                ". box6 box6 box6 ."
-                ". box5-2 box5-2 box5-3 .";
+        grid-template-areas: ". nav2-2 nav2 nav2-3 ." ". nav2-1 nav2-1 nav2-1 ." ". box2 box2 box2 ." ". box3 box3 box3 ." ". boxhr boxhr boxhr ." ". box4 box4 box4 ." ". box5 box5 box5-1 ." ". box6 box6 box6 ." ". box5-2 box5-2 box5-3 .";
 
     }
+
+    @media (max-width: 762px) {
+
+
     /*navbar2*/
     .nav2 {
         grid-area: nav2;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         background-color: white;
         height: 50px;
         margin-top: 50px;
         margin-left: -20px;
         margin-right: -20px;
+
     }
 
     .nav2 img {
@@ -265,17 +221,32 @@ main {
         border: .25px solid #49ACAB;
 
     }
-    .nav2-1{
+
+    .nav2-1 {
         grid-area: nav2-1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+
     }
-    .nav2-2{
+
+    .nav2-2 {
         grid-area: nav2-2;
+        margin-top: auto;
+        display: flex !important;
+        justify-content: space-between;
+
     }
-    .nav2-3{
+
+    .nav2-3 {
         grid-area: nav2-3;
+        margin-top: auto;
+        display: flex !important;
+        justify-content: space-between;
     }
 
     /*end navbar2*/
+    }
     .box2 {
         display: flex;
         flex-wrap: wrap;
@@ -404,12 +375,13 @@ main {
     .box5-2 {
         grid-area: box5-2;
         display: grid !important;
-        grid-template-columns: 2fr 60% repeat(6, 1fr);
+        grid-template-columns: 1fr 60% repeat(6, 1fr);
         grid-template-areas: ". c1 . c2 c3 c4 c5 .";
     }
 
     .c1 {
         grid-area: c1;
+
 
     }
 
@@ -429,6 +401,7 @@ main {
     .c5 {
         grid-area: c5;
     }
+
     .box5-2 img {
         height: 18px;
         width: 18px;
@@ -463,6 +436,7 @@ main {
     .d5 {
         grid-area: d5;
     }
+
     .box5-3 img {
         height: 18px;
         width: 18px;
@@ -482,65 +456,70 @@ main {
         border: 5px solid lightgray
     }
 
-    .box6 .man {
-        /*height: 27vh;*/
-    }
+
 }
 
 
-/*medium SCREEN ipad*/
+/*medium SCREEN 768 width*/
 @media (min-width: 768px) {
 
     main {
         display: grid !important;
-        grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 5% 30% 30% 15% 15% 5%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 3fr 3fr 3fr;
         grid-template-areas:
-            ". nav3 nav3-1 nav3-2 nav3-3 ."
-            ". box2 box2 box2 box2 ."
-            ". box3 box3 box3 box3 ."
-            ". boxhr boxhr boxhr boxhr ."
-            ". box4 box4 box7 box7 ."
-            ". box5 box5-1 box7 box7 ."
-            ". box6 box6 box7 box7 . "
-            ". box5-2 box5-3 box7 box7 .";
+                ". nav3 nav3-1 nav3-2 nav3-2 ."
+                ". box2 box2 box2 box2 ."
+                ". box3 box3 box3 box3 ."
+                ". boxhr boxhr boxhr boxhr ."
+                ". box4 box4 box7 box7 ."
+                ". box5 box5-1 box7 box7 ."
+                ". box6 box6 box7 box7 . "
+                ". box5-2 box5-3 box7 box7 .";
     }
-    /*navbar3*/
-    .nav3 {
-        grid-area: nav3;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-        height: 50px;
-        margin-top: 50px;
-        margin-left: -20px;
-        margin-right: -20px;
-    }
+    @media (max-width: 991px) {
+        /*navbar3*/
+        .nav3 {
+            grid-area: nav3;
+            display: flex !important;
+            justify-content: center;
+            background-color: white;
+            height: 50px;
+            margin-top: 50px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
 
-    .nav3 img {
-        width: 105px;
-        height: 105px;
-        border-radius: 50%;
-        z-index: 1;
-        margin-top: -25px;
-        border: .25px solid #49ACAB;
+        .nav3 img {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            z-index: 1;
+            margin-top: -25px;
+            border: .25px solid #49ACAB;
 
-    }
-    .nav3-1{
-        grid-area: nav3-1;
-    }
-    .nav3-2{
-        grid-area: nav3-2;
-    }
-    .nav3-3{
-        grid-area: nav3-3;
-    }
+        }
 
-    /*end navbar2*/
+        .nav3-1 {
+            grid-area: nav3-1;
+            margin-top: auto;
+        }
 
+        .nav3-2 {
+            grid-area: nav3-2;
+            display: flex !important;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /*end navbar3*/
+    }
     .box1 {
         grid-area: box1;
     }
+
     .box1-1 {
 
     }
@@ -551,29 +530,33 @@ main {
 
     .box2 {
         grid-area: box2;
+        margin-top: 50px;
     }
+
     .box3 {
         grid-area: box3;
     }
+
     .boxhr {
         grid-area: boxhr;
         margin-top: 50px;
         display: grid !important;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-                ". work .";
+        grid-template-areas: ". work .";
     }
+
     .work {
         grid-area: work;
         display: flex;
         margin: auto;
 
 
-
     }
+
     .box4 {
         grid-area: box4;
     }
+
     .box4 img {
         width: 25vw
     }
@@ -584,6 +567,7 @@ main {
 
     .box5-1 {
         grid-area: box5-1;
+
     }
 
     .box5-2 {
@@ -593,6 +577,7 @@ main {
     .box5-3 {
         grid-area: box5-3;
     }
+
     .box6 {
         grid-area: box6;
     }
@@ -600,107 +585,97 @@ main {
     .box6 img {
         width: 25vw;
     }
-    .box6 .man {
-        /*height: 5%;*/
-    }
+
 
     .sideimg img {
         height: 60px;
         width: 60px;
     }
+
     .box7 {
         grid-area: box7;
         display: grid !important;
-        grid-template-areas:
-                "box7-1"
-                "box7-2"
-                "box7-3"
-                "box8";
+        grid-template-areas: "box7-1" "box7-2" "box7-3" "box8";
     }
 
     .box7-1 {
-     grid-area: box7-1;
+        grid-area: box7-1;
 
     }
+
     .box7-1 img {
         float: left;
     }
+
     .box7-1 a {
-    clear: right;
+        clear: right;
     }
 
     .box7-2 {
         grid-area: box7-2;
     }
+
     .box7-2 img {
         float: left;
     }
+
     .box7-2 a {
         clear: right;
     }
+
     .box7-3 {
         grid-area: box7-3;
 
     }
+
     .box7-3 img {
         float: left;
     }
+
     .box7-3 a {
         clear: right;
     }
+
     .box8 {
         grid-area: box8;
 
     }
+
     .box8 i {
         padding-right: 10px;
     }
+
     .boxhr {
         grid-area: boxhr;
         margin-top: 50px;
         display: grid !important;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-                "work . last";
+        grid-template-areas: "work . last";
     }
+
     .work {
         grid-area: work;
         display: flex;
         justify-content: center;
     }
+
     .last {
         grid-area: last;
         display: flex;
         justify-content: flex-end;
     }
 
-    /*.box7-2 {*/
-    /*    grid-area: box7-2;*/
-    /*}*/
-
-    /*.box7-3 {*/
-    /*    grid-area: box7-3;*/
-    /*}*/
-
-    /*.box8 {*/
-    /*    grid-area: box8;*/
-    /*}*/
 }
-
-
-
-
-
 
 
 /*Large screen */
 @media (min-width: 992px) {
     main {
         display: grid !important;
-        grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
+        grid-template-columns: 10% 30% 30% 10% 10% 10%;
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas:
-                ". nav4 nav4-1 nav4-2 nav4-3 ."
+                ". nav4 nav4-1 nav4-2 nav4-2 ."
                 ". box2 box2 box2 box2 ."
                 ". box3 box3 box3 box3 ."
                 ". boxhr boxhr boxhr boxhr ."
@@ -713,7 +688,7 @@ main {
     /*navbar4*/
     .nav4 {
         grid-area: nav4;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         background-color: white;
         height: 50px;
@@ -731,42 +706,49 @@ main {
         border: .25px solid #49ACAB;
 
     }
-    .nav4-1{
-        grid-area: nav3-1;
+
+    .nav4-1 {
+        grid-area: nav4-1;
+        margin-top: auto;
     }
-    .nav4-2{
-        grid-area: nav3-2;
-    }
-    .nav4-3{
-        grid-area: nav3-3;
+
+    .nav4-2 {
+        grid-area: nav4-2;
+        display: flex !important;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: space-between;
     }
 
 
     .box2 {
         grid-area: box2;
     }
+
     .box3 {
         grid-area: box3;
     }
+
     .boxhr {
         grid-area: boxhr;
         margin-top: 50px;
         display: grid !important;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-                ". work .";
+        grid-template-areas: ". work .";
     }
+
     .work {
         grid-area: work;
         display: flex;
         margin: auto;
 
 
-
     }
+
     .box4 {
         grid-area: box4;
     }
+
     .box4 img {
         width: 25vw
     }
@@ -786,6 +768,7 @@ main {
     .box5-3 {
         grid-area: box5-3;
     }
+
     .box6 {
         grid-area: box6;
     }
@@ -793,6 +776,7 @@ main {
     .box6 img {
         width: 25vw;
     }
+
     .box6 .man {
         /*height: 5%;*/
     }
@@ -801,23 +785,22 @@ main {
         height: 60px;
         width: 60px;
     }
+
     .box7 {
         grid-area: box7;
         display: grid !important;
-        grid-template-areas:
-                "box7-1"
-                "box7-2"
-                "box7-3"
-                "box8";
+        grid-template-areas: "box7-1" "box7-2" "box7-3" "box8";
     }
 
     .box7-1 {
         grid-area: box7-1;
 
     }
+
     .box7-1 img {
         float: left;
     }
+
     .box7-1 a {
         clear: right;
     }
@@ -825,42 +808,51 @@ main {
     .box7-2 {
         grid-area: box7-2;
     }
+
     .box7-2 img {
         float: left;
     }
+
     .box7-2 a {
         clear: right;
     }
+
     .box7-3 {
         grid-area: box7-3;
 
     }
+
     .box7-3 img {
         float: left;
     }
+
     .box7-3 a {
         clear: right;
     }
+
     .box8 {
         grid-area: box8;
 
     }
+
     .box8 i {
         padding-right: 10px;
     }
+
     .boxhr {
         grid-area: boxhr;
         margin-top: 50px;
         display: grid !important;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-                "work . last";
+        grid-template-areas: "work . last";
     }
+
     .work {
         grid-area: work;
         display: flex;
         justify-content: center;
     }
+
     .last {
         grid-area: last;
         display: flex;
@@ -873,3 +865,142 @@ main {
 
 
 
+/*animations*/
+@-webkit-keyframes logoDrain {
+    0% {
+        content: url("../img/assets/logo.png");
+        height: 105px;
+        width: 105px;
+        border: 5px solid white;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 5px 9px 9px whitesmoke;
+    }
+    15% {
+        content: url("../img/assets/logo-1.png");
+        height: 105px;
+        width: 105px;
+        border: 1px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 9px 9px #00ACAB;
+
+    }
+    30% {
+        content: url("../img/assets/logo-2.png");
+        height: 105px;
+        width: 105px;
+        border: 2px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 11px 11px #00ACAB;
+
+    }
+    45% {
+        content: url("../img/assets/logo-3.png");
+        height: 105px;
+        width: 105px;
+        border: 3px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 13px 13px #00ACAB;
+    }
+    65%{
+        content: url("../img/assets/logo-4.png");
+        height: 105px;
+        width: 105px;
+        border: 4px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 14px 14px #00ACAB;
+    }
+    85% {
+        content: url("../img/assets/logo-5.png");
+        height: 105px;
+        width: 105px;
+        border: 4px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 15px 15px #00ACAB;
+    }
+    100% {
+            content: url("../img/assets/logo-6.png");
+        height: 105px;
+        width: 105px;
+        border: 5px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 20px 20px #00ACAB;
+
+    }
+}
+@-webkit-keyframes logoFill {
+    100% {
+        content: url("../img/assets/logo.png");
+        height: 105px;
+        width: 105px;
+        border: 5px solid white;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 5px 9px 9px whitesmoke;
+    }
+    85% {
+        content: url("../img/assets/logo-1.png");
+        height: 105px;
+        width: 105px;
+        border: 1px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 9px 9px #00ACAB;
+
+    }
+    65% {
+        content: url("../img/assets/logo-2.png");
+        height: 105px;
+        width: 105px;
+        border: 2px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 11px 11px #00ACAB;
+
+    }
+    45% {
+        content: url("../img/assets/logo-3.png");
+        height: 105px;
+        width: 105px;
+        border: 3px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 13px 13px #00ACAB;
+    }
+    30%{
+        content: url("../img/assets/logo-4.png");
+        height: 105px;
+        width: 105px;
+        border: 4px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 14px 14px #00ACAB;
+    }
+    15% {
+        content: url("../img/assets/logo-5.png");
+        height: 105px;
+        width: 105px;
+        border: 4px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 15px 15px #00ACAB;
+    }
+    0% {
+        content: url("../img/assets/logo-6.png");
+        height: 105px;
+        width: 105px;
+        border: 5px solid #00ACAB;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 20px 20px #00ACAB;
+
+    }
+}
+.logo1:hover {
+    -webkit-animation: logoDrain .30s 1 alternate ease-out forwards;
+
+}
+
+
+.logo1{
+    width: 105px;
+    height: 105px;
+}
+
+.logo2{
+    width: 105px;
+    height: 105px;
+    -webkit-animation: logoFill .30s;
+}
