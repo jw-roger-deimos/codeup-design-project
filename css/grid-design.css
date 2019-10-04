@@ -213,8 +213,8 @@ main {
         background-color: white;
         height: 50px;
         margin-top: 50px;
-        margin-left: -20px;
-        margin-right: -20px;
+        margin-left: -200px;
+        margin-right: -200px;
 
     }
 
@@ -714,8 +714,8 @@ main {
         background-color: white;
         height: 50px;
         margin-top: 50px;
-        margin-left: -20px;
-        margin-right: -20px;
+        margin-left: -100px;
+        margin-right: -600px;
     }
 
     .nav4 img {
@@ -723,6 +723,8 @@ main {
         height: 105px;
         border-radius: 50%;
         z-index: 1;
+        margin-right: auto;
+        margin-left: 150px;
         margin-top: -25px;
         border: .25px solid #49ACAB;
 
